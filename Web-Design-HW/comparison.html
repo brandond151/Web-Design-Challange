@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Bootstrap Visualization Dashboard - Comparison</title>
+    <link rel="stylesheet" type="text/css" href="Resources/Stylesheets/StylesheetComparison.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Resources/Stylesheets/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+        <!--NavBar  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- sm nav bar turns to mobile 576 p | md turns bar to mobile at 768 px | expand-lg - 992 px gets activated (mobile version) -->
+          <a class="navbar-brand" href="index.html">Lattitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"> <!-- aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"-->
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarColor03">
+              <ul class="navbar-nav ml-auto" > <!-- ml - pushes elements to the right.  md - pushes to the left. xd - pushes to the center --->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">Plots</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Visual_1.html">Max Temperature</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Visual_2.html">humidity</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Visual_3.html">cloudiness</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Visual_4.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="data.html">Data</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <!-- Summary-->
+        
+          <div class="card border-light mb-3" id="conatinerHeader">
+            <div class="card-header">
+              <h3 id="homeBlock1Title">Comparison: <small class="text-muted">Latitude vs. X</small></h3>
+            </div>
+            <div class="card-body">
+                <p class="lead">Click any plot to get an in-depth analysis.</p>
+              <div container>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <div>
+                        <a  href="Visual_1.html">
+                        <img height=100% width=100% src="Resources/Assets/Images/Fig1.png" alt="Fig1">
+                        </a>
+                    </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <div>
+                        <a  href="Visual_2.html">
+                            <img height=100% width=100% src="Resources/Assets/Images/Fig2.png" alt="Fig2">
+                        </a>   
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <div>
+                        <a  href="Visual_3.html">
+                            <img height=100% width=100% src="Resources/Assets/Images/Fig3.png" alt="Fig3">
+                        </a>
+                    </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <div>
+                        <a  href="Visual_4.html">
+                        <img height=100% width=100% src="Resources/Assets/Images/Fig4.png" alt="Fig4">
+                        </a>  
+                    </div>
+                    </div>
+                </div>
+              </div>    
+            </div>
+          </div>
+       
+                  
+      
+  </body>
+</html>
